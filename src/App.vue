@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import MainHeader from "./components/MenuHeader.vue"
-import Logo from "./components/LogoComponent.vue"
+import LogoComponents from "./components/LogoComponent.vue"
 </script>
 
 <template>
  <MainHeader class="main-header" />
- <Logo />
+ <LogoComponents />
 </template>
 
 <style scoped>
