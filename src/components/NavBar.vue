@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="topnav">
+      <div class="nav">
         <a href="#home" @mouseover="hoverEffect($event)" @mouseleave="resetEffect">Home</a>
         <a href="#news" @mouseover="hoverEffect($event)" @mouseleave="resetEffect">News</a>
         <a href="#contact" @mouseover="hoverEffect($event)" @mouseleave="resetEffect">Contact</a>
@@ -31,14 +31,11 @@ export default {
 <style scoped>
 .navbar {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
-.topnav a {
+.nav a {
   color: #000;
   text-align: center;
   padding-top: 10rem;

@@ -7,9 +7,9 @@ export default {
 <template>
   <body>
     <div class="logo">
-      <span data-aos="fade-right" data-aos-duration="1000" class="kaio">KAIO</span>
-      <img data-aos="zoom-out" data-aos-duration="1000" src="../assets/img/kaio.png" alt="logo" />
-      <span data-aos="fade-left" data-aos-duration="1000" class="max">MAX</span>
+      <span data-aos="fade-right" data-aos-duration="3000" class="kaio">KAIO</span>
+      <img data-aos="zoom-out" data-aos-duration="3000" src="../assets/img/kaio.png" alt="logo" />
+      <span data-aos="fade-left" data-aos-duration="3000" class="max">MAX</span>
     </div>
   </body>
 </template>
@@ -21,7 +21,7 @@ body {
   align-items: center;
   height: 9rem;
   width: 0rem;
-  margin: 0;
+  margin-top: 10rem;
 }
 
 .logo {

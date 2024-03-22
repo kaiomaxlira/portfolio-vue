@@ -1,15 +1,20 @@
-<script setup lang="ts">
-import MainHeader from "./components/MenuHeader.vue"
-import LogoComponents from "./components/LogoComponent.vue"
+<script lang="ts">
+import AboutMe from "./components/AboutMe.vue";
+import HeadScreen from "./components/HeadScreen.vue";
+
+export default {
+ components: {
+    AboutMe, 
+    HeadScreen
+ }
+}
 </script>
 
 <template>
- <MainHeader class="main-header" />
- <LogoComponents />
+ <HeadScreen />
+ <AboutMe />
 </template>
 
 <style scoped>
-.main-header {
- margin-bottom: 10rem;
-}
+
 </style>
