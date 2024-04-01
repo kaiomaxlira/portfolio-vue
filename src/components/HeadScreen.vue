@@ -1,12 +1,12 @@
 <script lang="ts">
 import NavBar from "./NavBar.vue"
-import LogoComponents from "./LogoComponent.vue"
+import LogoComponent from "./LogoComponent.vue"
 
 export default {
     name: "HeadScreen",
     components: {
         NavBar,
-        LogoComponents
+        LogoComponent
     }
 }
 </script>
@@ -14,7 +14,7 @@ export default {
 <template>
     <div class="HeadScreen">
         <NavBar />
-        <LogoComponents />
+        <LogoComponent />
     </div>
 </template>
 
