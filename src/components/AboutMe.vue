@@ -13,7 +13,7 @@ export default {
 
 <style scoped>
 .aboutme {
-  background-color: #ffffff;
+  background-color: #000000;
   margin: 0;
   width: 100%;
   height: 615px;

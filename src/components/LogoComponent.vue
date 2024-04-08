@@ -2,27 +2,22 @@
 export default {
   data() {
     return {
-      kaioVisible: false, // Alterado para false
+      spanVisible: true, // Inicialmente visível
     };
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll(); // Chamada inicial para verificar a visibilidade do elemento KAIO
+    this.handleScroll(); // Chama a função handleScroll inicialmente
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     handleScroll() {
-      const scrollPosition = window.scrollY || window.pageYOffset;
-      // Define um limite de rolagem para mostrar o elemento Kaio
-      const scrollThreshold = 200; // ajuste conforme necessário
-      // Verifica se a rolagem ultrapassou o limite e se o KAIO ainda não está visível
-      if (scrollPosition >= scrollThreshold && !this.kaioVisible) {
-        this.kaioVisible = true; // Define kaioVisible como true para mostrar o elemento KAIO
-      } else if (scrollPosition < scrollThreshold && this.kaioVisible) {
-        this.kaioVisible = false; // Define kaioVisible como false para ocultar o elemento KAIO
-      }
+      const scrollPosition = window.scrollY || window.scrollY;
+      const scrollThreshold = 300; // Posição de rolagem para ocultar o nome "KAIO"
+      // Verifica se a posição de rolagem ultrapassou o limite definido
+      this.spanVisible = scrollPosition < scrollThreshold;
     },
   },
 };
@@ -31,9 +26,9 @@ export default {
 <template>
   <body>
     <div class="logo" ref="container">
-      <span :class="{ 'kaio': kaioVisible, 'kaio-animation': !kaioVisible }">KAIO</span>
-      <img class="logo-img" src="../assets/img/kaio.png" alt="logo" />
-      <span class="max">MAX</span>
+      <span :class="{ 'kaio': spanVisible, 'animation-left': !spanVisible }">KAIO</span>
+      <img :class="{'logo-img': spanVisible, 'logo-img-out': !spanVisible }" src="../assets/img/kaio.png" alt="logo" />
+      <span :class="{ 'max': spanVisible, 'animation-right': !spanVisible }">MAX</span>
     </div>
   </body>
 </template>
@@ -49,16 +44,28 @@ body {
 
 .logo {
   height: 210px;
-  width: 200px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .logo-img {
   opacity: 0;
   animation: zoomIn 4s forwards;
 }
+
+.logo-img-out {
+  opacity: 0;
+  animation: zoomOut 4s forwards;
+} 
 
 @keyframes zoomIn {
   from {
@@ -70,6 +77,17 @@ body {
     opacity: 1; 
   }
 }
+@keyframes zoomOut {
+  from {
+    transform: scale(1); 
+    opacity: 1; 
+  }
+  to {
+    transform: scale(0); 
+    opacity: 0; 
+  }
+}
+
 
 .kaio {
   font-size: 150px;
@@ -82,18 +100,34 @@ body {
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-450px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateX(35%);
     opacity: 1;
   }
 }
 
-.kaio-animation {
+@keyframes slideKaioOut {
+  from {
+    transform: translateX(35%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-450px);
+    opacity: 0;
+  }
+}
+
+.animation-left {
   transition: opacity 0.5s ease;
   opacity: 0;
+  font-size: 150px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  animation: slideKaioOut 4s forwards;
 }
 
 .max {
@@ -108,18 +142,33 @@ body {
 
 @keyframes slideInRight {
   from {
-    transform: translateX(100%);
+    transform: translateX(450px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateX(-40%);
     opacity: 1;
   }
 } 
+@keyframes slideMaxOut {
+  from {
+    transform: translateX(-40%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(450px);
+    opacity: 0;
+  }
+} 
 
-.logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+.animation-right {
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  font-size: 150px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-left: 12px;
+  animation: slideMaxOut 4s forwards;
 }
 </style>
