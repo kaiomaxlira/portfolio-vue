@@ -10,36 +10,49 @@ export default {
       <div class="title_content">
         Sobre
         <div class="content">
-          Formado em Sistemas de Informações com algumas experiências em estagio e freelancer acumulei
-          conhecimentos nas areas de QA (Controle de qualidade) front-ende e back-end, onde desenvolvir minhas habilidades
-          com react, vue, tailwind css, php, laraval e cypress. Com isto tenho a capacidade de criar intefaces web,
-          APIS rest e fazer testes de qualidade. Com a mente aberta para inovação e um compromisso inabalável com a qualidade,
-          estou pronto para criar soluções que inspirem, encantem e façam a diferença no universo da web. 
+          Formado em Sistemas de Informações com algumas experiências em estagio
+          e freelancer acumulei conhecimentos nas areas de QA (Controle de
+          qualidade) front-ende e back-end, onde desenvolvir minhas habilidades
+          com react, vue, tailwind css, php, laraval e cypress. Com isto tenho a
+          capacidade de criar intefaces web, APIS rest e fazer testes de
+          qualidade. Com a mente aberta para inovação e um compromisso
+          inabalável com a qualidade, estou pronto para criar soluções que
+          inspirem, encantem e façam a diferença no universo da web.
         </div>
       </div>
-      <div class="title_information">Informações
-      <div class="my_informations">
-        <div class="info">
-          <span class="label">Idade:</span>
-          <span class="value">23 anos</span>
-        </div>
-        <div class="info">
-          <span class="label">Email:</span>
-          <span class="value">kaiomaxlira@outlook.com</span>
-        </div>
-        <div class="info">
-          <span class="label">Telefone:</span>
-          <span class="value">+55 (88) x xxxx-xxxx</span>
-        </div>
-        <div class="info">
-          <span class="label">Linguagem:</span>
-          <span class="value">Português, English</span>
-        </div>
-        <div class="info">
-          <span class="label">Localização:</span>
-          <span class="value">Aurora, Ceará, Brasil</span>
+      <div class="title_information">
+        Informações
+        <div class="my_informations">
+          <div class="info">
+            <span class="label">Idade:</span>
+            <span class="value">23 anos</span>
+          </div>
+          <div class="info">
+            <span class="label">Email:</span>
+            <span class="value">kaiomaxlira@outlook.com</span>
+          </div>
+          <div class="info">
+            <span class="label">Telefone:</span>
+            <span class="value">+55 (88) x xxxx-xxxx</span>
+          </div>
+          <div class="info">
+            <span class="label">Linguagem:</span>
+            <span class="value">Português, English</span>
+          </div>
+          <div class="info">
+            <span class="label">Localização:</span>
+            <span class="value">Aurora, Ceará, Brasil</span>
+          </div>
         </div>
       </div>
+      <div class="social">
+        <a href="https://github.com/kaiomaxlira" target="_blank" >
+          <img src="../assets/img/github.svg" alt="Git" class="github"/>
+        </a>
+
+        <a href="https://www.linkedin.com/in/kaio-max-16b33a187/" target="_blank">
+          <img src="../assets/img/linkedin.svg" alt="In" class="linkedIn"/>
+        </a>
       </div>
     </div>
     <img class="backimg" src="../assets/img/background.jpg" alt="background" />
@@ -56,7 +69,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .container {
@@ -67,6 +79,32 @@ export default {
   position: relative;
   display: flex;
 }
+/* tudo que esta denro da div logo abaixo */
+
+.social {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social a img {
+  width: 2.1rem;
+}
+
+.github,
+.linkedIn {
+  height: 2rem;
+  margin: 10px;
+  width: 3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github:hover,
+.linkedIn:hover {
+  filter: invert(50%) sepia(100%) saturate(1500%) hue-rotate(200deg);
+  transform: scale(1.2);
+}
 
 .title_content {
   font-family: "Poppins", sans-serif;
@@ -76,6 +114,7 @@ export default {
   color: rgb(43, 41, 41);
   margin-top: 4rem;
   margin-left: 5rem;
+  height: 15rem;
 }
 
 .content {
@@ -96,6 +135,8 @@ export default {
   color: rgb(43, 41, 41);
   margin-top: 4rem;
   margin-left: 4rem;
+  height: 20rem;
+  width: 100%;
 }
 .my_informations {
   display: flex;
