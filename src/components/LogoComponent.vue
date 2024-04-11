@@ -27,7 +27,7 @@ export default {
   <body>
     <div class="logo" ref="container">
       <span :class="{ 'kaio': spanVisible, 'animation-left': !spanVisible }">KAIO</span>
-      <img :class="{'logo-img': spanVisible, 'logo-img-out': !spanVisible }" src="../assets/img/kaio.png" alt="logo" />
+      <img :class="{'logo-img': spanVisible, 'logo-img-out': !spanVisible }" src="../assets/img/3angulo.png" alt="logo" />
       <span :class="{ 'max': spanVisible, 'animation-right': !spanVisible }">MAX</span>
     </div>
   </body>
@@ -39,7 +39,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 9rem;
+  width: 100%;
   margin-top: 10rem;
+  overflow: hidden
 }
 
 .logo {
@@ -52,8 +54,8 @@ body {
 
 
 .logo img {
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   object-fit: contain;
 }
 
