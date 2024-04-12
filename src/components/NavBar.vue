@@ -16,12 +16,12 @@ export default {
     hoverEffect(event: MouseEvent) {
       const target = event.target as HTMLElement;
       target.style.transition = "color 0.5s"; 
-      target.style.color = "#808080";
+      target.style.color = "#6391FF";
     },
     resetEffect(event: MouseEvent) {
       const target = event.target as HTMLElement;
       target.style.transition = "color 0.5s";
-      target.style.color = "#000";
+      target.style.color = "#D3D3D3";
       
     }
   }
@@ -31,16 +31,22 @@ export default {
 <style scoped>
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-top: 3rem;
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid #75705d;
 }
 
 .nav a {
-  color: #000;
+  color: #D3D3D3;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
   text-align: center;
   padding-top: 10rem;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 1.3rem;
   margin: 57px;
 }
 </style>

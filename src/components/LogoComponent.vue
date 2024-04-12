@@ -38,10 +38,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 9rem;
+  height: 465px;
   width: 100%;
-  margin-top: 10rem;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .logo {
@@ -92,6 +91,7 @@ body {
 
 
 .kaio {
+  color: #acacac;
   font-size: 150px;
   font-family: "Archivo Black", sans-serif;
   font-weight: 900;
@@ -123,6 +123,7 @@ body {
 }
 
 .animation-left {
+  color: #acacac;
   transition: opacity 0.5s ease;
   opacity: 0;
   font-size: 150px;
@@ -133,6 +134,7 @@ body {
 }
 
 .max {
+  color: #acacac;
   font-size: 150px;
   font-family: "Archivo Black", sans-serif;
   font-weight: 900;
@@ -164,6 +166,7 @@ body {
 } 
 
 .animation-right {
+  color: #acacac;
   transition: opacity 0.5s ease-out;
   opacity: 0;
   font-size: 150px;

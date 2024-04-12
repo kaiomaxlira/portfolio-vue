@@ -37,7 +37,7 @@ export default {
           </div>
           <div class="info">
             <span class="label">Linguagem:</span>
-            <span class="value">Português, English</span>
+            <span class="value">Português, Inglês</span>
           </div>
           <div class="info">
             <span class="label">Localização:</span>
@@ -74,8 +74,6 @@ export default {
 .container {
   width: 73rem;
   height: 28rem;
-  background-color: #d9d9d9;
-  border-radius: 0px 50px 0px 50px;
   position: relative;
   display: flex;
 }
@@ -111,7 +109,7 @@ export default {
   font-weight: 800;
   font-style: normal;
   font-size: 2.5rem;
-  color: rgb(43, 41, 41);
+  color: #D3D3D3;
   margin-top: 4rem;
   margin-left: 5rem;
   height: 15rem;
@@ -121,7 +119,7 @@ export default {
   margin-right: 0.5rem;
   font-weight: 500;
   font-size: 1rem;
-  color: rgb(43, 41, 41);
+  color: #D3D3D3;
   width: 40rem;
   margin-top: 2rem;
   line-height: 1.5rem;
@@ -132,7 +130,7 @@ export default {
   font-weight: 900;
   font-size: 2rem;
   font-size: 2.5rem;
-  color: rgb(43, 41, 41);
+  color: #D3D3D3;
   margin-top: 4rem;
   margin-left: 4rem;
   height: 20rem;
@@ -153,7 +151,7 @@ export default {
 .label {
   margin-right: 0.5rem;
   font-weight: 700;
-  color: rgb(43, 41, 41);
+  color: #D3D3D3;
   font-size: 1.1rem;
 }
 
@@ -161,7 +159,7 @@ export default {
   margin-right: 0.5rem;
   font-weight: 500;
   font-size: 1rem;
-  color: rgb(43, 41, 41);
+  color: #D3D3D3;
 }
 
 .backimg {
