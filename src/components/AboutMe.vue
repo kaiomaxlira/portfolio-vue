@@ -12,7 +12,7 @@ export default {
         <div class="content">
           Formado em Sistemas de Informações com algumas experiências em estagio
           e freelancer acumulei conhecimentos nas areas de QA (Controle de
-          qualidade) front-ende e back-end, onde desenvolvir minhas habilidades
+          qualidade) front-end e back-end, onde desenvolvir minhas habilidades
           com react, vue, tailwind css, php, laraval e cypress. Com isto tenho a
           capacidade de criar intefaces web, APIS rest e fazer testes de
           qualidade. Com a mente aberta para inovação e um compromisso
