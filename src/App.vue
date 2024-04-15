@@ -2,14 +2,14 @@
 import NavBar from "./components/NavBar.vue"
 import AboutMe from "./components/AboutMe.vue";
 import LogoComponent from "./components/LogoComponent.vue"
-import ToolsCollection from "./components/ToolsCollection.vue";
+import ToolsAndProjects from "./components/ToolsAndProjects.vue";
 
 export default {
  components: {
    NavBar,
     AboutMe, 
     LogoComponent,
-    ToolsCollection
+    ToolsAndProjects
  }
 }
 </script>
@@ -19,7 +19,7 @@ export default {
       <NavBar /> 
       <LogoComponent />
       <AboutMe />
-      <ToolsCollection />
+      <ToolsAndProjects />
    </div>
 </template>
 

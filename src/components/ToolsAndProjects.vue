@@ -1,12 +1,12 @@
 <script lang="ts">
 export default {
-  name: "ToolsCollection",
+  name: "ToolsAndProjects",
   components: {},
 };
 </script>
 
 <template>
-  <div class="ToolsCollection">
+  <div class="ToolsAndProjects">
       <div class="container_project"></div>
       <div class="container_tool"></div>
       
@@ -14,7 +14,7 @@ export default {
 </template>
 
 <style scoped>
-.ToolsCollection {
+.ToolsAndProjects {
   margin: 0;
   width: 100%;
   height: 615px;
