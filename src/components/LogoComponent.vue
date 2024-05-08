@@ -1,16 +1,21 @@
 <script lang="ts">
+import NavBar from "../components/NavBar.vue"
+
 export default {
+  components: {
+    NavBar,
+  },
   data() {
     return {
       spanVisible: true, // Inicialmente visível
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
     this.handleScroll(); // Chama a função handleScroll inicialmente
   },
   beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleScroll() {
@@ -25,10 +30,21 @@ export default {
 
 <template>
   <body>
-    <div class="logo" ref="container">
-      <span :class="{ 'kaio': spanVisible, 'animation-left': !spanVisible }">KAIO</span>
-      <img :class="{'logo-img': spanVisible, 'logo-img-out': !spanVisible }" src="../assets/img/3angulo.png" alt="logo" />
-      <span :class="{ 'max': spanVisible, 'animation-right': !spanVisible }">MAX</span>
+    <div class="background">
+      <NavBar /> 
+      <div class="logo" ref="container">
+        <span :class="{ kaio: spanVisible, 'animation-left': !spanVisible }"
+          >KAIO</span
+        >
+        <img
+          :class="{ 'logo-img': spanVisible, 'logo-img-out': !spanVisible }"
+          src="../assets/img/3angulo.ico"
+          alt="logo"
+        />
+        <span :class="{ max: spanVisible, 'animation-right': !spanVisible }"
+          >MAX</span
+        >
+      </div>
     </div>
   </body>
 </template>
@@ -38,19 +54,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 465px;
+  height: 615px;
   width: 100%;
   overflow: hidden;
 }
 
+.background {
+  background-image: url('../assets/img/cidade2.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+
+}
+
 .logo {
+  margin-top: 8rem;
   height: 210px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .logo img {
   height: 90%;
@@ -66,33 +91,32 @@ body {
 .logo-img-out {
   opacity: 0;
   animation: zoomOut 4s forwards;
-} 
+}
 
 @keyframes zoomIn {
   from {
-    transform: scale(0); 
-    opacity: 0; 
+    transform: scale(0);
+    opacity: 0;
   }
   to {
-    transform: scale(1); 
-    opacity: 1; 
+    transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes zoomOut {
   from {
-    transform: scale(1); 
-    opacity: 1; 
+    transform: scale(1);
+    opacity: 1;
   }
   to {
-    transform: scale(0); 
-    opacity: 0; 
+    transform: scale(0);
+    opacity: 0;
   }
 }
 
-
 .kaio {
-  color: #acacac;
-  font-size: 150px;
+  color: #989c90;
+    font-size: 150px;
   font-family: "Archivo Black", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -123,7 +147,7 @@ body {
 }
 
 .animation-left {
-  color: #acacac;
+  color: #989c90;
   transition: opacity 0.5s ease;
   opacity: 0;
   font-size: 150px;
@@ -134,7 +158,7 @@ body {
 }
 
 .max {
-  color: #acacac;
+  color: #989c90;
   font-size: 150px;
   font-family: "Archivo Black", sans-serif;
   font-weight: 900;
@@ -153,7 +177,7 @@ body {
     transform: translateX(-40%);
     opacity: 1;
   }
-} 
+}
 @keyframes slideMaxOut {
   from {
     transform: translateX(-40%);
@@ -163,10 +187,10 @@ body {
     transform: translateX(450px);
     opacity: 0;
   }
-} 
+}
 
 .animation-right {
-  color: #acacac;
+  color: #989c90;
   transition: opacity 0.5s ease-out;
   opacity: 0;
   font-size: 150px;

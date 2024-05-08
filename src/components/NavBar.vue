@@ -16,12 +16,12 @@ export default {
     hoverEffect(event: MouseEvent) {
       const target = event.target as HTMLElement;
       target.style.transition = "color 0.5s"; 
-      target.style.color = "#6391FF";
+      target.style.color = "#bc6c64";
     },
     resetEffect(event: MouseEvent) {
       const target = event.target as HTMLElement;
       target.style.transition = "color 0.5s";
-      target.style.color = "#D3D3D3";
+      target.style.color = "#989c90";
       
     }
   }
@@ -34,12 +34,13 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 150px;
-  border-bottom: 2px solid #75705d;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .nav a {
-  color: #D3D3D3;
+  color: #989c90;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: italic;

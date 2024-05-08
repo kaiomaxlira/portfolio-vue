@@ -1,7 +1,12 @@
 <script lang="ts">
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 export default {
   name: "ToolsAndProjects",
-  components: {},
+  components: {
+    FontAwesomeIcon,
+  },
 };
 </script>
 
@@ -11,14 +16,73 @@ export default {
       <span class="project">Projetos</span>
 
       <div class="card_p">
-        <img class="img_p" src="../assets/img/3angulo.png" alt="projeto" />
-        <h1>Calcularoda</h1>
-        <p>Este projeto tem como função calcular a sua contabilidade no gla</p>
-        <button>c</button>
+        <a href="https://github.com/kaiomaxlira" target="_blank">
+          <img   
+            src="../assets/img/mago.jpg"
+            alt="projeto"
+            title="Calculadora na web"
+            class="img_p"
+          />
+        </a>
+        <div>
+          <h1>Calcularoda</h1>
+          <p>
+            Este projeto tem como função calcular a <br />sua contabilidade no
+            gla
+          </p>
+        </div>
+        <div class="link_projeto">
+          <a title="GitHub" href="https://github.com/kaiomaxlira" target="_blank">
+            <img src="../assets/img/github.svg" alt="Git" class="github" />
+          </a>
+        </div>
       </div>
 
-      <div class="card_p"></div>
-      <div class="card_p"></div>
+      <div class="card_p">
+        <a href="https://github.com/kaiomaxlira" target="_blank">
+          <img   
+            src="../assets/img/mago.jpg"
+            alt="projeto"
+            title="Calculadora na web"
+            class="img_p"
+          />
+        </a>
+        <div>
+          <h1>Calcularoda</h1>
+          <p>
+            Este projeto tem como função calcular a <br />sua contabilidade no
+            gla
+          </p>
+        </div>
+        <div class="link_projeto">
+          <a  title="GitHub" href="https://github.com/kaiomaxlira" target="_blank">
+            <img src="../assets/img/github.svg" alt="Git" class="github" />
+          </a>
+        </div>
+      </div>
+
+      <div class="card_p">
+        <a href="https://github.com/kaiomaxlira" target="_blank">
+          <img   
+            src="../assets/img/mago.jpg"
+            alt="projeto"
+            title="Calculadora na web"
+            class="img_p"
+          />
+        </a>
+        <div>
+          <h1>Calcularoda</h1>
+          <p>
+            Este projeto tem como função calcular a <br />sua contabilidade no
+            gla
+          </p>
+        </div>
+        <div class="link_projeto">
+          <a  title="GitHub" href="https://github.com/kaiomaxlira" target="_blank">
+            <img src="../assets/img/github.svg" alt="Git" class="github" />
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="container_tool">
@@ -26,7 +90,7 @@ export default {
 
       <div class="container">
         <div class="column">
-          <div class="card">Click me</div>
+          <div class="card"><font-awesome-icon icon="laravel" /></div>
           <div class="card">Click me</div>
           <div class="card">Click me</div>
         </div>
@@ -64,7 +128,7 @@ export default {
   font-weight: 800;
   font-style: normal;
   font-size: 2.5rem;
-  color: #d3d3d3;
+  color: #989c90;
 }
 
 /*  Projetos */
@@ -75,15 +139,15 @@ export default {
   height: 150px;
   box-sizing: border-box;
   border-radius: 17px;
-  border: 1px solid white;
+  border: 1px solid #989c90;
   transition: all 0.5s;
   display: flex;
   align-items: self-start;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card_p:hover {
-  border: 1px solid #6391ff;
+  border: 1px solid #bc6c64;
   transform: scale(1.05);
 }
 
@@ -96,9 +160,38 @@ export default {
 }
 
 .img_p {
-  height: 140px;
-  width: 140px;
+  height: 130px;
+  width: 130px;
   margin: 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 10%;
+  transition: transform 0.3s;
+}
+
+.img_p:hover {
+  transform: scale(1.05);
+}
+
+.link_projeto {
+  margin-top: 3.5rem;
+  margin-right: 1rem;
+}
+
+.github a img {
+  width: 2.1rem;
+}
+
+.github {
+  height: 2rem;
+  margin: 0rem;
+  width: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.github:hover {
+  filter: invert(95%) sepia(6%) saturate(23%) hue-rotate(188deg) brightness(98%) contrast(91%);
+  transform: scale(1.09);
 }
 
 .card_p h1 {
@@ -108,17 +201,18 @@ export default {
   font-weight: 800;
   font-style: italic;
   font-size: 1.5rem;
-  color: #d3d3d3;
+  color: #989c90;
+  margin-top: 0.3rem;
 }
 
 .card_p p {
-  margin-top: 2rem;
-  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 0.5rem;
-  color: #d3d3d3;
+  font-size: 0.6rem;
+  color: #989c90;
 }
 
 /* Ferramentas */
@@ -158,7 +252,7 @@ export default {
 }
 
 .card:hover {
-  border: 1px solid #6391ff;
+  border: 1px solid #bc6c64;
   transform: scale(1.05);
 }
 
@@ -166,15 +260,4 @@ export default {
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
-/* .container_project,
-.container_tool {
-  width: 30rem;
-  height: 35rem;
-  border-radius: 10% 10% 10% 10%;
-  border-right: 0px solid black;
-  border-bottom: 0px solid black;
-  border-top: 0px solid black;
-  border-left: 0px solid black;
-  box-shadow: 0 0 10px #6391ff;
-} */
 </style>

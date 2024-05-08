@@ -46,16 +46,16 @@ export default {
         </div>
       </div>
       <div class="social">
-        <a href="https://github.com/kaiomaxlira" target="_blank" >
+        <a title="GitHub" href="https://github.com/kaiomaxlira" target="_blank" >
           <img src="../assets/img/github.svg" alt="Git" class="github"/>
         </a>
 
-        <a href="https://www.linkedin.com/in/kaio-max-16b33a187/" target="_blank">
+        <a title="linkedIn" href="https://www.linkedin.com/in/kaio-max-16b33a187/" target="_blank">
           <img src="../assets/img/linkedin.svg" alt="In" class="linkedIn"/>
         </a>
       </div>
     </div>
-    <img class="backimg" src="../assets/img/background.jpg" alt="background" />
+
   </div>
 </template>
 
@@ -95,12 +95,12 @@ export default {
   height: 2rem;
   margin: 10px;
   width: 3rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .github:hover,
 .linkedIn:hover {
-  filter: invert(50%) sepia(100%) saturate(1500%) hue-rotate(200deg);
+  filter: invert(95%) sepia(6%) saturate(23%) hue-rotate(188deg) brightness(98%) contrast(91%);
   transform: scale(1.2);
 }
 
@@ -109,7 +109,7 @@ export default {
   font-weight: 800;
   font-style: normal;
   font-size: 2.5rem;
-  color: #D3D3D3;
+  color: #989c90;
   margin-top: 4rem;
   margin-left: 5rem;
   height: 15rem;
@@ -119,7 +119,7 @@ export default {
   margin-right: 0.5rem;
   font-weight: 500;
   font-size: 1rem;
-  color: #D3D3D3;
+  color: #989c90;
   width: 40rem;
   margin-top: 2rem;
   line-height: 1.5rem;
@@ -130,7 +130,7 @@ export default {
   font-weight: 900;
   font-size: 2rem;
   font-size: 2.5rem;
-  color: #D3D3D3;
+  color: #989c90;
   margin-top: 4rem;
   margin-left: 4rem;
   height: 20rem;
@@ -151,7 +151,7 @@ export default {
 .label {
   margin-right: 0.5rem;
   font-weight: 700;
-  color: #D3D3D3;
+  color: #989c90;
   font-size: 1.1rem;
 }
 
@@ -159,17 +159,7 @@ export default {
   margin-right: 0.5rem;
   font-weight: 500;
   font-size: 1rem;
-  color: #D3D3D3;
+  color: #989c90;
 }
 
-.backimg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-fit: cover;
-  z-index: -1;
-}
 </style>
