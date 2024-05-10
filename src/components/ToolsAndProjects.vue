@@ -1,12 +1,7 @@
 <script lang="ts">
-
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
 export default {
   name: "ToolsAndProjects",
-  components: {
-    FontAwesomeIcon,
-  },
+  components: {},
 };
 </script>
 
@@ -17,7 +12,7 @@ export default {
 
       <div class="card_p">
         <a href="https://github.com/kaiomaxlira" target="_blank">
-          <img   
+          <img
             src="../assets/img/mago.jpg"
             alt="projeto"
             title="Calculadora na web"
@@ -32,7 +27,11 @@ export default {
           </p>
         </div>
         <div class="link_projeto">
-          <a title="GitHub" href="https://github.com/kaiomaxlira" target="_blank">
+          <a
+            title="GitHub"
+            href="https://github.com/kaiomaxlira"
+            target="_blank"
+          >
             <img src="../assets/img/github.svg" alt="Git" class="github" />
           </a>
         </div>
@@ -40,7 +39,7 @@ export default {
 
       <div class="card_p">
         <a href="https://github.com/kaiomaxlira" target="_blank">
-          <img   
+          <img
             src="../assets/img/mago.jpg"
             alt="projeto"
             title="Calculadora na web"
@@ -55,7 +54,11 @@ export default {
           </p>
         </div>
         <div class="link_projeto">
-          <a  title="GitHub" href="https://github.com/kaiomaxlira" target="_blank">
+          <a
+            title="GitHub"
+            href="https://github.com/kaiomaxlira"
+            target="_blank"
+          >
             <img src="../assets/img/github.svg" alt="Git" class="github" />
           </a>
         </div>
@@ -63,7 +66,7 @@ export default {
 
       <div class="card_p">
         <a href="https://github.com/kaiomaxlira" target="_blank">
-          <img   
+          <img
             src="../assets/img/mago.jpg"
             alt="projeto"
             title="Calculadora na web"
@@ -78,7 +81,11 @@ export default {
           </p>
         </div>
         <div class="link_projeto">
-          <a  title="GitHub" href="https://github.com/kaiomaxlira" target="_blank">
+          <a
+            title="GitHub"
+            href="https://github.com/kaiomaxlira"
+            target="_blank"
+          >
             <img src="../assets/img/github.svg" alt="Git" class="github" />
           </a>
         </div>
@@ -90,21 +97,145 @@ export default {
 
       <div class="container">
         <div class="column">
-          <div class="card"><font-awesome-icon icon="laravel" /></div>
-          <div class="card">Click me</div>
-          <div class="card">Click me</div>
+          <div class="card">
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+              target="_blank"
+            >
+              <img
+                src="../assets/img/tools_img/html5.svg"
+                alt="tools"
+                title="Html 5"
+              />
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+              target="_blank"
+            >
+              <img
+                src="../assets/img/tools_img/css3-alt.svg"
+                alt="tools"
+                title="Css"
+              />
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+              target="_blank"
+            >
+              <img
+                src="../assets/img/tools_img/js.svg"
+                alt="tools"
+                title="Java Script"
+              />
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+            >
+              <img
+                src="../assets/img/tools_img/typescript.svg"
+                alt="tools"
+                title="TypeScript"
+              />
+            </a>
+          </div>
         </div>
 
         <div class="column">
-          <div class="card">Click me</div>
-          <div class="card">Click me</div>
-          <div class="card">Click me</div>
+          <div class="card">
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              <img
+                src="../assets/img/tools_img/tailwind-css.svg"
+                alt="tools"
+                title="Tailwind Css"
+              />
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://vuejs.org/" target="_blank">
+              <img
+                src="../assets/img/tools_img/vuejs.svg"
+                alt="tools"
+                title="Vuejs"
+              />
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://react.dev/" target="_blank">
+              <img
+                src="../assets/img/tools_img/react.svg"
+                alt="tools"
+                title="React"
+              />
+            </a>
+          </div>
+          <div class="card">
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+              target="_blank"
+            >
+              <img
+                src="../assets/img/tools_img/js.svg"
+                alt="tools"
+                title="Java Script"
+              />
+            </a>
+          </div>
         </div>
 
         <div class="column">
-          <div class="card">Click me</div>
-          <div class="card">Click me</div>
-          <div class="card">Click me</div>
+          <div class="card">
+            <a href="https://laravel.com/" target="_blank">
+              <img
+                src="../assets/img/tools_img/laravel.svg"
+                alt="tools"
+                title="Laravel"
+              />
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="https://www.python.org/" target="_blank">
+              <img
+                src="../assets/img/tools_img/python.svg"
+                alt="tools"
+                title="Python"
+              />
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+            >
+              <img
+                src="../assets/img/tools_img/typescript.svg"
+                alt="tools"
+                title="TypeScript"
+              />
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+            >
+              <img
+                src="../assets/img/tools_img/typescript.svg"
+                alt="tools"
+                title="TypeScript"
+              />
+            </a>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -118,7 +249,7 @@ export default {
   width: 100%;
   height: 615px;
   display: flex;
-  gap: 15rem;
+  gap: 17rem;
   align-items: flex-start;
   justify-content: center;
 }
@@ -190,7 +321,8 @@ export default {
 }
 
 .github:hover {
-  filter: invert(95%) sepia(6%) saturate(23%) hue-rotate(188deg) brightness(98%) contrast(91%);
+  filter: invert(95%) sepia(6%) saturate(23%) hue-rotate(188deg) brightness(98%)
+    contrast(91%);
   transform: scale(1.09);
 }
 
@@ -218,7 +350,7 @@ export default {
 /* Ferramentas */
 
 .tools {
-  margin-left: 4rem;
+  margin-left: 4.7rem;
 }
 
 .container {
@@ -229,6 +361,7 @@ export default {
 .column {
   display: flex;
   flex-direction: column;
+  height: 550px;
 }
 
 .card {
@@ -237,18 +370,17 @@ export default {
   width: 100px;
   height: 100px;
   border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
   border-radius: 17px;
-  text-align: center;
   cursor: pointer;
   transition: all 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
+}
+
+.card img {
+  width: 70px;
+  height: 80px;
 }
 
 .card:hover {
@@ -259,5 +391,4 @@ export default {
 .card:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
-
 </style>
