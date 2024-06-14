@@ -278,7 +278,7 @@ export default {
 }
 
 .card_p:hover {
-  border: 1px solid #bc6c64;
+  border: 1px solid #E6E6E7;
   transform: scale(1.05);
 }
 
@@ -384,7 +384,7 @@ export default {
 }
 
 .card:hover {
-  border: 1px solid #bc6c64;
+  border: 1px solid #E6E6E7;
   transform: scale(1.05);
 }
 

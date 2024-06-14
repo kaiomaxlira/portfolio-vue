@@ -3,13 +3,15 @@
 import AboutMe from "./components/AboutMe.vue";
 import LogoComponent from "./components/LogoComponent.vue"
 import ToolsAndProjects from "./components/ToolsAndProjects.vue";
+import Folder from "./components/folder.vue"
 
 export default {
  components: {
    
     AboutMe, 
     LogoComponent,
-    ToolsAndProjects
+    ToolsAndProjects,
+    Folder,
  }
 }
 </script>
@@ -20,6 +22,8 @@ export default {
       <LogoComponent />
       <AboutMe />
       <ToolsAndProjects />
+      <Folder />
+
    </div>
 </template>
 
